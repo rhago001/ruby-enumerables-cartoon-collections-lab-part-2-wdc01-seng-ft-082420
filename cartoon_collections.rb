@@ -49,15 +49,8 @@ end
 
 
 def find_valid_calls(planeteer_calls)
-  valid_calls = ["Earth!", "Wind!", "Fire!", "Water!", "Heart!"]
-  not_found=nil 
   
-c=valid_calls+planeteer_calls
-pairs=[]
-if c.uniq{|pair| pairs == pair}
- puts pairs
- else
-   puts nil
-end
-end
+ a= array.select.each_with_index { |item, index| 
+  valid_calls[index] == item }
+  puts a[0]
 end 
